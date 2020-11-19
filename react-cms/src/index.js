@@ -7,7 +7,7 @@ import {ApolloClient, HttpLink, InMemoryCache, ApolloProvider} from "@apollo/cli
 
 const client = new ApolloClient({
   link: new HttpLink({
-    uri: "https://anadev-express-portfolio.netlify.app/"
+    uri: "http://localhost:4000/graphql"
   }),
   cache: new InMemoryCache()
 });
